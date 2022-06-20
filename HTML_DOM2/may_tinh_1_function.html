@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="num1" placeholder="Nhap so thu nhat">
+    <select name="" id="cal">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="x">x</option>
+        <option value="/">/</option>
+    </select>
+    <input type="number" id="num2" placeholder="Nhap so thu hai">
+    <button onclick="Caculator()">Tinh</button>
+    <p id="result"></p>
+</body>
+</html>
+<script>
+    function Caculator() {
+        let num1 =+        ;
+        let cal =+          ;  // + - x /
+        let num2 =         ;
+        let result = 0;
+        if (cal == "+") {
+            result = num1 + num2;
+        } else if (cal == "-") {
+            result = num1 - num2;
+        } else if (cal == "x") {
+
+        } else if (cal == "/") {
+            
+        }
+
+        let display = 'Dap an la:' + num1+ ......;
+        document.getElementById("result").innerHTML = display;
+    }
+</script>
