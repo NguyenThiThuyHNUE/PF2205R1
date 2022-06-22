@@ -21,21 +21,21 @@
 </html>
 <script>
     function Caculator() {
-        let num1 =+        ;
-        let cal =+          ;  // + - x /
-        let num2 =         ;
-        let result = 0;
+        let num1 = +document.getElementById("num1").value;
+        let cal =  document.getElementById("cal").value;  // + - x /
+        let num2 = +document.getElementById("num2").value;
+        let result;
         if (cal == "+") {
             result = num1 + num2;
         } else if (cal == "-") {
             result = num1 - num2;
         } else if (cal == "x") {
-
+            result = num1 * num2;
         } else if (cal == "/") {
-            
+            result = num1 / num2;
         }
 
-        let display = 'Dap an la:' + num1+ ......;
+        let display = 'Dap an la:' + num1+ cal + num2 + " = " + result;
         document.getElementById("result").innerHTML = display;
     }
 </script>
