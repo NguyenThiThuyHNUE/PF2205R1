@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // Nhập vào 1 mảng 1 chiều. Đến khi nhập q thì dừng lại
+    // Lọc các phần tử là số và đếm số lần xuất hiện của các phần tử trong mảng
+       let arr = [1,100,7,1,3,11,4,6,5,7,8,6,5,4]
+       // Sắp xếp 
+       arr.sort(function(a,b) {
+           return a - b;
+       })
+       document.write(arr + "<br>");
+       debugger;
+       let count = 0;
+       for(let i = 0; i < arr.length; i++) {
+            if(arr[i] == arr[i-1]) {
+                count++;
+            } else {
+                count = 1
+            }
+            if(arr[i] != arr[i+1]) {
+                document.write("Số " + arr[i] + " xuất hiện = " + (count) + " (lần) " + "<br>");
+            }
+       }
+</script>

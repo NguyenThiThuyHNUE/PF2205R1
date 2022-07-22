@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let month = prompt("Nhap thang"); 
+    // if (1 <= month <= 12) {
+    //     if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12 ) {
+    //         alert("Thang co 31 ngay");
+    //     } else if (month == 4 || month == 6 || month == 9 || month == 11) {
+    //         alert ("Thag co 30 ngay")
+    //     } else if (month == 2) {
+    //         alert ("28 hoac 29 ngay")
+    //     } 
+    // } else {
+    //         alert ("Nhap lai")
+    //     }
+
+    let January = "1";
+    let Feb     = "2";
+    let March   = "3";
+    switch (month) {
+        case January:
+        case March:
+        case "5":
+        case "7":
+        case "8":
+        case "10":
+        case "12":
+            alert("Thang co 31 ngay"); 
+            break;
+        case "4":
+        case "6":
+        case "9": 
+        case 10:
+            alert("Thang co 30 ngay"); 
+            break;
+        case Feb:
+            alert("Thang co 29 hoac 28 ngay"); 
+            break;   
+        default:
+            alert("Nhap lai");  
+    }
+    
+</script>

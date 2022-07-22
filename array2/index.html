@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Nhập các phần tử của mảng bằng promt() đến khi nào nhập "q" thì thôi; <br>
+        Nhập vào một giá trị cần tìm trong mảng. <br>
+        Check giá trị đó có thuộc mảng hay không và in ra thông báo <br>
+    </p>
+</body>
+</html>
+<script>
+    debugger;
+    let arr = [];
+    let element = prompt("Nhập phần tử");
+    while (element != "q") {
+        arr.push(element);
+        element = prompt("Nhập phần tử");
+    }
+    let element_check = prompt ("Nhập phần tử cần check");
+    let flag = false;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == element_check) {
+            flag = true;
+        }
+    }
+    if (flag) {
+        alert (element_check +"có thuộc mảng");
+    } else {
+        alert (element_check +"không thuộc mảng");
+    }
+</script>

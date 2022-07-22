@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function checkNumber(n) {
+        let result = false;
+        if (n < 2) {
+            result = false;
+        } else if(n == 2) {
+            result = true;
+        } else {
+            var count = 0;
+            for (let i = 1; i <= n; i++) { // 9
+                if(n % i == 0) { //1
+                    count++;
+                }
+            }
+            if (count == 2) {
+                result = true;
+            }
+        }
+        return count;
+    }
+    let number = +prompt("Nhap so");
+    document.write(checkNumber(number));
+</script>

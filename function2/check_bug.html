@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let matrix = [];
+    debugger;
+    for (let row = 0; row < 3; row++) {
+        // matrix[row] = [];
+        for (let column = 0; column < 5; column++) {
+            matrix[row][column] = Math.floor((Math.random()*100)+1);
+            document.write(matrix[row][column]);
+        }
+        document.write("<br>");
+    }
+
+    // let matrix = new Array(10).fill(new Array(10));
+    // for (let row = 0; row < matrix.length; row++) {
+    //     for (let column = 0; column < matrix[row].length; column++) {
+    //         matrix[row][column] = Math.floor((Math.random() * 100) + 1);
+    //         document.write( matrix[row][column]);
+    //     }
+    //     document.write("<br>");
+    // }
+
+</script>
